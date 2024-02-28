@@ -20,12 +20,24 @@ function App() {
         </div>
         <br />
         <Divider />
-        <div className="center">
-          <Img image={image} />
-          <Button onClick={() => window.alert("HI! 👋🏻")}>Click Me!</Button>
-          <Link link="https://www.youtube.com/watch?v=28Lj4qt3lCc&pp=ygUSYWJvdXQgeW91IHRoZSAxOTc1">
-            One of my favorite song
-          </Link>
+        <br />
+        <div className="row">
+          <div className="col">
+            <div className="center full-height">
+              <Img image={image} />
+              <Button onClick={() => window.alert("HI! 👋🏻")}>Click Me!</Button>
+            </div>
+          </div>
+          <div className="col">
+            <div className="center full-height">
+              This is the example of usecase of flex box with row and columns.
+              <br />
+              <br />
+              <Link link="https://www.youtube.com/watch?v=28Lj4qt3lCc&pp=ygUSYWJvdXQgeW91IHRoZSAxOTc1">
+                One of my favorite song
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </>

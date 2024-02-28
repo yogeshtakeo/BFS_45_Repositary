@@ -9,3 +9,21 @@
 
   flex-direction: column;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 75%;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.full-height {
+  height: 100% !important;
+}
