@@ -1,3 +1,9 @@
+import Box from "./components/Box/Box";
+import Divider from "./components/Divider/Divider";
+import Img from "./components/Img/Img";
+import Button from "./components/Button/Button";
+import Link from "./components/Link/Link";
+
 import "./assets/styles.css";
 
 import image from "./assets/image.svg";
@@ -7,27 +13,19 @@ function App() {
     <>
       <div className="page">
         <div className="center">
-          <div className="box">
+          <Box>
             <h1>Hello, World</h1>
             <small>Work by Satshree Shrestha</small>
-          </div>
+          </Box>
         </div>
         <br />
-        <div className="divider">
-          <hr />
-        </div>
+        <Divider />
         <div className="center">
-          <img className="image" src={image} alt="image" />
-          <button className="btn" onClick={() => window.alert("HI! 👋🏻")}>
-            Click Me!
-          </button>
-          <a
-            className="link"
-            href="https://www.youtube.com/watch?v=28Lj4qt3lCc&pp=ygUSYWJvdXQgeW91IHRoZSAxOTc1"
-            target="_blank"
-          >
+          <Img image={image} />
+          <Button onClick={() => window.alert("HI! 👋🏻")}>Click Me!</Button>
+          <Link link="https://www.youtube.com/watch?v=28Lj4qt3lCc&pp=ygUSYWJvdXQgeW91IHRoZSAxOTc1">
             One of my favorite song
-          </a>
+          </Link>
         </div>
       </div>
     </>
