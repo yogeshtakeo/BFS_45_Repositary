@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import img from './assets/mountfuji.jpg';
+import img1 from './assets/mteverest.jpg';
+import Button from './components/button';
+import './App.css'; // Import global styles directly
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <h1>Beautiful Mountains</h1>
+      <h3>Click on the pictures to learn more</h3>
+      
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <h2>Mount Fuji</h2>
+        <a href="https://en.wikipedia.org/wiki/Mount_Fuji" target="_blank">
+          <img src={img} className='image' alt="Mount Fuji" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div>
+        <h2>Mount Everest</h2>
+        <a href="https://en.wikipedia.org/wiki/Mount_Everest" target="_blank">
+          <img src={img1} alt="Mount Everest" />
+        </a>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
+      <Button /> {/* Render Button component */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
