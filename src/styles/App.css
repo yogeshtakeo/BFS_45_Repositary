@@ -1,0 +1,86 @@
+/*in upcoming tasks, we can use the knowledge of SCSS style to make the CSS better with the use of variable, nesting, and inheritance */
+.navbar {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  justify-content: center; 
+  margin-top: 40px;
+}
+
+.navbar a {
+  color: #1B3C73;
+  font-weight: bold;
+  padding: 0 40px; 
+  text-decoration: none;
+}
+
+
+hr{
+  height: 2px;
+  background-color: #1B3C73;
+}
+
+h2{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+}
+
+h3{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.outerContainer {
+  margin: 0% 25%;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerContainer {
+  background-color: #f0f0f0;
+  padding: 3px 10px 10px;
+  border-radius: 8px;
+}
+
+
+.image{
+    position: relative;
+}
+
+.info{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 20px;
+}
+
+button{
+  background-color: #1B3C73;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding: 10px;
+}
+
+button:hover{
+  background-color:azure;
+  color: black;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.task{
+  font-size: 20px;
+  font-weight: bold;
+
+  margin: 0px;
+}
