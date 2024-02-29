@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .imageColumn {
@@ -48,4 +48,13 @@ body {
 
 .buttonDiv {
   margin-top: 2rem;
+}
+
+.takeoImg {
+  width: 8%;
+}
+
+.logoDiv {
+  display: flex;
+  justify-content: center;
 }
