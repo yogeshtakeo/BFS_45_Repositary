@@ -1,0 +1,40 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f4f9ff;
+  height: 500px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #77aafc;
+  color: white;
+  border-radius: 5px;
+  border-color: cadetblue;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
