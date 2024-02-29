@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function Label() {
-    return (
-        <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-    )
+function Label({ labelName, labelId, children }) {
+  return (
+    <div>
+      <label htmlFor={labelId}>{labelName}</label>
+      <textarea id={labelId} name={labelId} required />
+      {children}
+    </div>
+  );
 }
 
-export default Label
+export default Label;

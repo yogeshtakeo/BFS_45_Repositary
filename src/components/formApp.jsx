@@ -1,22 +1,22 @@
 import React from 'react'
 
 import '../styles/form.css'
-import Button from './button'
-import Label from './label'
-import Form from './form'
-import Header from './header'
+import Form from './Form'
+import Header from './Header'
+import Label from './Label'
+import Button from './Button'
 
-function App() {
+function FormApp() {
     return (
         <div className='container'>
             <Header />
             <Form />
-            <Label />
-            <Label />
-            <Label />
-            <Button />
+            <Label labelName={Name} labelId={Name}/>
+            <Label labelName={Email} labelId={Email}/>
+            <Label labelName={Message} labelId={Message}/>
+            <Button buttonText={Login}/>
         </div>
     )
 }
 
-export default App
+export default FormApp

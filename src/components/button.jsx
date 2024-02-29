@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Button() {
+function Button({buttonText = 'Submit'}) {
   return (
-    <button type="submit">Submit</button>
+    <>
+    <button type="submit">{buttonText}</button>
+    </>
   )
 }
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import FormApp from './components/FormApp'
 
-import App from './components/formApp.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <FormApp />
   </React.StrictMode>
 )
