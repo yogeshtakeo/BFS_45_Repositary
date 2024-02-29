@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 400px; 
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 30px !important; 
+  color: #333; 
+}
+
+.login-form {
+  padding: 2rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 0.5rem; 
+  }
+}
