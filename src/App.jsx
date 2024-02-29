@@ -14,7 +14,7 @@ export default function MyApp() {
     <div>
       <h1 className='body'>Welcome</h1>
       <div className='box'>
-        <img src={bitcoinimg} height={300} width={300}></img>
+        <img src={bitcoinimg} height={400} width={400}></img>
       </div>
       <MyButton />
     </div>
