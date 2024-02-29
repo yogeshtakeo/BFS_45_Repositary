@@ -1,4 +1,46 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
+  line-height: 1.75rem;
+}
+
+code {
+  background-color: #fff28f;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  /* margin: 0.25rem; */
+  padding: 0.25rem;
+}
+
+hr {
+  border: 0.5px solid #c9c9c9;
+  margin: 1rem;
+}
+
+button {
+  display: block;
+
+  background-color: #1c79d7;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  margin: 0.5rem;
+  padding: 0.25rem 0.75rem;
+
+  transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1c79d7ae;
+
+  transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
 }
