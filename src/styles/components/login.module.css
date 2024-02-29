@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.imageColumn {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formColumn {
+  flex: 1;
+  padding: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.messageDiv {
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.messageOneDiv {
+  font-size: 30px;
+}
+
+.messageTwoDiv {
+  font-size: 20px;
+}
+
+.passwordInputDiv {
+  margin-top: 1rem;
+}
+
+.buttonDiv {
+  margin-top: 2rem;
+}
