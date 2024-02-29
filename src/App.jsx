@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles.css';
+import React, {useEffect} from 'react';
+import MyButton from './Button.jsx';
+import bitcoinimg from './bitcoin_img.jpg';
 
-function App() {
-  const [count, setCount] = useState(0)
+function PG_Title(){
+  useEffect(() => {document.title = 'Bitcoin is the future'},[])
+};
 
+
+export default function MyApp() {
+  PG_Title()
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <h1 className='body'>Welcome</h1>
+      <div className='box'>
+        <img src={bitcoinimg} height={300} width={300}></img>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <MyButton />
+    </div>
+  );
 }
-
-export default App
