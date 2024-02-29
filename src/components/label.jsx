@@ -1,10 +1,24 @@
-import React from 'react';
+import React from 'react'
 
-function Label({ labelName, labelId, children }) {
+function Label({ labelName, labelId, isInputOrTextArea, children }) {
+  const inputOrText = isInputOrTextArea ? 'input' : 'textarea'
   return (
     <div>
       <label htmlFor={labelId}>{labelName}</label>
-      <textarea id={labelId} name={labelId} required />
+      {isInputOrTextArea ? (
+        <input
+          id={labelId}
+          name={labelId}
+          required
+          rows={4} 
+        />
+      ) : (
+        <textarea
+          id={labelId}
+          name={labelId}
+          required
+        />
+      )}
       {children}
     </div>
   );
