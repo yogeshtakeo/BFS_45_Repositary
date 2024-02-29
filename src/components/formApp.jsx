@@ -12,7 +12,7 @@ function FormApp() {
       <Label labelName="Name" labelId="name" isInputOrTextArea={true} />
       <Label labelName="Email" labelId="email" isInputOrTextArea={true} />
       <Label labelName="Message" labelId="message" isInputOrTextArea={false}/>
-      <Button buttonText="Login" />
+      <Button buttonText="Submit" />
     </div>
   );
 }

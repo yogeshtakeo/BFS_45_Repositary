@@ -1,7 +1,7 @@
 import React from 'react'
+import '../styles/form.css'
 
 function Label({ labelName, labelId, isInputOrTextArea, children }) {
-  const inputOrText = isInputOrTextArea ? 'input' : 'textarea'
   return (
     <div>
       <label htmlFor={labelId}>{labelName}</label>
