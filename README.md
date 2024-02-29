@@ -1,8 +1,26 @@
-# React + Vite
+# Task 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<strong>Work by Satshree Shrestha</strong>
 
-Currently, two official plugins are available:
+## Simple CSS Showcase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- text-align
+- box-shadow
+- border-radius
+- :hover pseudo selector
+- line-height (for line spacing)
+- margin and padding with `rem` and `%`
+
+## Complex CSS Properties Used
+
+- keyframes
+- transform [scale]
+- transition [property/duration/timing-function]
+- browser specific property [-moz-/-ms-/-webkit-]
+- animation [name/duration/timing-function/iteration-count]
+
+## Screenshot
+
+<img src="./src/assets/sc.png" alt="screenshot" style="width: 100%" />
+  
+<hr />
