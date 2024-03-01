@@ -1,95 +1,91 @@
-/* app.css */
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-}
-
-
-.header {
-  text-align: center;
-  background-color: #0b0b0b;
-  color: #ff0000;
+/* Margin and Padding Mastery */
+div {
+  margin: 10px;
   padding: 20px;
-  margin-bottom: 20px;
 }
 
-.phone {
-  width: 300px;
-  margin: 0 auto 20px; /* Adjust margin for spacing between header and phone */
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+p {
+  margin: 5px;
+  padding: 15px;
 }
 
-.wallpaper {
-  position: relative;
-  overflow: hidden;
+/* Width and Height Exploration */
+.fixed-width {
+  width: 200px;
 }
 
-.wallpaper img {
-  width: 100%;
-  height: auto;
-  display: block;
+.relative-width {
+  width: 50%;
 }
 
-.time-widget {
-  position: absolute;
-  top: 0; /* Adjust this value to set the vertical position */
-  left: 0; /* Adjust this value to set the horizontal position */
-  width: 100%;
-  text-align: center;
-  padding: 20px; /* Increase padding for more coverage */
-  box-sizing: border-box;
+@media screen and (max-width: 600px) {
+  .responsive-width {
+    width: 100%;
+  }
 }
 
-.time {
-  font-size: 36px; /* Increased font size */
-  color: red; /* Set the font color to red */
+/* Attribute Styling Challenges */
+a[href="https://example.com"] {
+  color: blue;
 }
 
-.notifications {
-  position: absolute;
-  top: 50%; /* Adjust this value to set the vertical position */
-  left: 50%; /* Adjust this value to set the horizontal position */
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
+input[type="text" i] {
+  background-color: lightgray;
 }
 
-.notification {
-  padding: 8px;
-  margin-bottom: 5px;
-  background-color: rgba(224, 247, 250, 0.7); /* Semi-transparent background color */
-  border-radius: 5px;
-}
-
-.feature-description {
-  text-align: center;
-  margin: 20px 0;
-  animation: rubberBand 1s; /* Apply rubber band animation */
-}
-
-.buy-button-container {
-  text-align: center;
-}
-
-.buy-button {
-  padding: 15px 30px;
+/* Hover Effects Application */
+button:hover {
   background-color: #4CAF50;
-  color: #fff;
+  color: white;
+}
+
+/* Transition Experimentation */
+.transition-box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+.transition-box:hover {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+/* Animation Creation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animated-element {
+  animation: bounce 2s infinite;
+}
+
+/* Font Styling Customization */
+body {
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.buy-button:hover {
-  background-color: #45a049;
+/* Letter Spacing Adjustment */
+h1 {
+  letter-spacing: 2px;
 }
 
-/*I added a fadeIn animation using the @keyframes rule, which gradually increases the opacity from 0 to 1 over 1 second.
-The opacity: 0 in the .feature-description class ensures that the description starts invisible.*/
+/* Exploration of Additional Properties */
+.box {
+  border: 2px solid #333;
+  box-shadow: 5px 5px 10px #888888;
+  text-align: center;
+}
