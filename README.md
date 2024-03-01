@@ -10,10 +10,6 @@ The Box Toggle App is a React web application that allows users to toggle the ac
     <li>Event handlers</li>
 </ul>
 
-# Screenshots
+# Demo
 
-<img src="./src/assets/Screenshot 2024-02-29 190743.png"/>
-
-After clicking the Toggle button.
-
-<img src="./src/assets/Screenshot 2024-02-29 203537.png">
+[screen-capture.webm](https://github.com/yogeshtakeo/BFS_45_Repositary/assets/74273235/e500353d-6a08-4dc3-891f-29d38d315148)
