@@ -1,7 +1,30 @@
 .page {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 
   height: 100vh;
+
+  position: relative; /* to accomodate position absolute elements */
+}
+
+.nav-box {
+  height: 100%;
+  width: 200px; /* size of nav bar */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.head-box {
+  position: absolute;
+  top: 0;
+  left: 200px; /* accomodate nav bar */
+  width: calc(100% - 200px); /* accomodate nav bar */
+}
+
+.contents {
+  margin-left: 200px; /* accomodate nav bar */
+  margin-top: 5rem; /* accomodate header */
 }

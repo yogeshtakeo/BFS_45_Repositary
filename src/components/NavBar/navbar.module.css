@@ -1,0 +1,8 @@
+.navbar {
+  height: 100%;
+  padding: 1rem 0.75rem;
+}
+
+.navbar .header {
+  margin-top: 5rem;
+}

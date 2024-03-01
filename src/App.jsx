@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import Header from "./components/Header/Header";
+import NavBar from "./components/NavBar/NavBar";
 import Widget from "./components/Widget/Widget";
 
 import "./App.css";
@@ -14,7 +16,15 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="page">
-      <RouterProvider router={router} />
+      <div className="nav-box">
+        <NavBar />
+      </div>
+      <div className="head-box">
+        <Header />
+      </div>
+      <div className="contents">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
