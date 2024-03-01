@@ -5,7 +5,7 @@ import style from "./header.module.css";
 function Header() {
   return (
     <div className={style.header}>
-      <div>Work by Satshree</div>
+      <div className={style.title}>Work by Satshree</div>
       <div>
         <small>Takeo Frontend Bootcamp Tasks</small>
       </div>

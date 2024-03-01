@@ -7,4 +7,11 @@
   justify-content: space-between;
 
   padding: 0 0.75rem;
+
+  background-color: #ededed;
+}
+
+.header .title {
+  /* font-weight: 600; */
+  font-size: 20px;
 }
