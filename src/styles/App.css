@@ -1,86 +1,126 @@
-/*in upcoming tasks, we can use the knowledge of SCSS style to make the CSS better with the use of variable, nesting, and inheritance */
-.navbar {
+/* Google Font */
+.section-header{
   display: flex;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  justify-content: center; 
-  margin-top: 40px;
-}
-
-.navbar a {
-  color: #1B3C73;
-  font-weight: bold;
-  padding: 0 40px; 
-  text-decoration: none;
-}
-
-
-hr{
-  height: 2px;
-  background-color: #1B3C73;
-}
-
-h2{
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
+  justify-content:space-between;
   margin: 0px;
-}
-
-h3{
-  font-size: 22px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-}
-
-.outerContainer {
-  margin: 0% 25%;
-}
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.innerContainer {
-  background-color: #f0f0f0;
-  padding: 3px 10px 10px;
-  border-radius: 8px;
-}
-
-
-.image{
-    position: relative;
-}
-
-.info{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  padding: 20px;
-}
-
-button{
-  background-color: #1B3C73;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  padding: 10px;
-}
-
-button:hover{
-  background-color:azure;
-  color: black;
-  cursor: pointer;
-}
-
-ul{
-  list-style: none;
   padding: 0px;
 }
 
-.task{
-  font-size: 20px;
-  font-weight: bold;
+.brand{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    letter-spacing: 2px;
+}
 
-  margin: 0px;
+.motto{
+  font-family: "Slackside One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  padding: 54px 20px 0px 0px;
+}
+
+.img-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px; 
+  width: 100%; 
+  overflow: hidden; 
+  position: relative;
+
+  transform-origin: bottom;
+  animation: fade-out linear forwards;
+  animation-timeline: view();
+  animation-range: exit 10px;
+}
+
+.img-header img {
+  max-width: 100%; 
+  max-height: 100%; 
+  height: auto; 
+  border-radius: 30px;
+
+}
+
+@keyframes fade-out{
+  25%{opacity: 1;}
+  85%,100% {opacity: 0; scale: 3;}
+  }
+
+
+.description{
+  font-family: "Slackside One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-left: 40px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.feature-box {
+  position: relative;
+  width: 80%; 
+  height: 700px; 
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+
+  transform-origin: top;
+  opacity: 0; 
+  animation: fadeInOpacity linear forwards; 
+  animation-timeline: view();
+  animation-range: entry 10px;
+}
+
+@keyframes fadeInOpacity {
+  10% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.box1 {
+  background-image: url('../assets/2.jpg');
+}
+
+
+.box2 {
+  background-image: url('../assets/3.jpg');
+}
+  
+.box3 {
+  background-image: url('../assets/4.jpg');
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.feature-box .text-overlay {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  top: 5%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+.feature-box h2 {
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+
 }

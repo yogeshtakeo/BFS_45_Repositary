@@ -1,8 +1,27 @@
-# React + Vite
+## CSS Insights
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Page Scroll Animation is used in the task.
 
-Currently, two official plugins are available:
+### Flexbox Layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Utilized for `.section-header` and `.feature-container` for flexible and responsive layouts.
+
+### Font Styling
+
+- Defines font families, weights, and styles for text elements for consistent and attractive typography.
+
+### Animations
+
+- Keyframes define animations for fading and scaling effects, adding visual interest to elements.
+
+### Image Styling
+
+- Images are made responsive with maximum width and height properties, and rounded corners for aesthetics.
+
+### Hover Effects
+
+- Applied to boxes (`box1`, `box2`, `box3`) for interactive feedback, enhancing user experience.
+
+### Positioning
+
+- Absolute positioning used for text overlay within `.feature-box` for layered visual effects.
