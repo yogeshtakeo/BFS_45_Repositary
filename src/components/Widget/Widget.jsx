@@ -23,30 +23,32 @@ function Widget() {
   };
 
   return (
-    <div className={style.widget}>
-      <div>
-        <code>$ print("Work by Satshree Shrestha")</code>
-        <br />
-        <code>$ Work by Satshree Shrestha</code>
-      </div>
-      <hr />
-      This is a Widget to show case the different margin and padding of this
-      HTML element as well as the CSS transition and animation property.
-      <br />
-      <br />
-      <div className={style.flex} style={{ backgroundColor: bgColor }}>
+    <div className={style.center} style={{ height: "100%" }}>
+      <div className={style.widget}>
         <div>
-          <button onClick={toggleImgAnimation}>
-            Click me to animate the image
-          </button>
-          <button onClick={toggleBgColor}>
-            Click me to transition the background color
-          </button>
+          <code>$ print("Work by Satshree Shrestha")</code>
+          <br />
+          <code>$ Work by Satshree Shrestha</code>
         </div>
-        <img className={imgClass} src={crowbar} alt="image to rotate" />
-      </div>
-      <div className={style.center}>
-        <h3 className={style.h3}>Eureka!</h3>
+        <hr />
+        This is a Widget to show case the different margin and padding of this
+        HTML element as well as the CSS transition and animation property.
+        <br />
+        <br />
+        <div className={style.flex} style={{ backgroundColor: bgColor }}>
+          <div>
+            <button onClick={toggleImgAnimation}>
+              Click me to animate the image
+            </button>
+            <button onClick={toggleBgColor}>
+              Click me to transition the background color
+            </button>
+          </div>
+          <img className={imgClass} src={crowbar} alt="image to rotate" />
+        </div>
+        <div className={style.center}>
+          <h3 className={style.h3}>Eureka!</h3>
+        </div>
       </div>
     </div>
   );

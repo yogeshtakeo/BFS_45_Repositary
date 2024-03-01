@@ -11,7 +11,7 @@ function NavBar() {
       <div className={style.header}></div>
       <hr />
       <div className={navLink}>Home</div>
-      <div className={navLink}>CSS Showcase</div>
+      <div className={navLink}>Task 3</div>
     </div>
   );
 }
