@@ -1,7 +1,7 @@
 .boxes {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .box {
@@ -21,4 +21,26 @@
 
 .box.current {
   background-color: rgb(120, 213, 233);
+  border-color: rgb(170, 225, 236);
+  transition: transform 0.5s;
+  position: relative;
+  animation-name: currentBox;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.box.current:hover {
+  transform: translateY(-10px);
+  background-color: rgb(222, 214, 247);
+  border-color: rgb(120, 213, 233);
+}
+
+@keyframes currentBox {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
 }
