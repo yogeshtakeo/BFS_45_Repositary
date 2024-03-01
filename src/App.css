@@ -27,4 +27,6 @@
 .contents {
   margin-left: 200px; /* accomodate nav bar */
   margin-top: 5rem; /* accomodate header */
+
+  width: 100%;
 }
