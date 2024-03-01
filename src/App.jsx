@@ -20,7 +20,10 @@ function App() {
 
       <section>
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Sed vitae eros vehicula, volutpat magna ac, posuere nisl.<br/> Ut feugiat rutrum velit, non bibendum est suscipit ac.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros vehicula, volutpat magna ac, posuere nisl. Ut feugiat rutrum velit, non bibendum est suscipit ac.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros vehicula, volutpat magna ac, posuere nisl. Ut feugiat rutrum velit, non bibendum est suscipit ac.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros vehicula, volutpat magna ac, posuere nisl.<br/> Ut feugiat rutrum velit, non bibendum est suscipit ac.</p>
+
       </section>
 
       <section>

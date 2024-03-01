@@ -1,8 +1,15 @@
-# React + Vite
+# Basic Website Design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My first basic website using javascript, css, and reactjs.
 
-Currently, two official plugins are available:
+## Things I learned
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+    <li>Styling components with CSS properties like margin, padding, transition, animation and hovering.</li>
+    <li>CSS layout modeling tools like flexbox and its properties like flex-direction, which defines the axis of the flex container (row or column), justify-content, which aligns flex items along the main axis, align-items, which  aligns flex items along the cross axis.</li>
+</ul>
+
+## Screenshots
+<img src="./src/assets/Screenshot 2024-02-29 at 8.19.12 PM.png">
+<img src="./src/assets/Screenshot 2024-02-29 at 8.19.21 PM.png">
+
