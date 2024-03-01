@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
@@ -7,17 +7,6 @@ import Home from "./components/Home/Home";
 import Widget from "./components/Widget/Widget";
 
 import "./App.css";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/task3",
-    element: <Widget />,
-  },
-]);
 
 function App() {
   return (
@@ -29,7 +18,10 @@ function App() {
         <Header />
       </div>
       <div className="contents">
-        <RouterProvider router={router} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/task3" element={<Widget />} />
+        </Routes>
       </div>
     </div>
   );
