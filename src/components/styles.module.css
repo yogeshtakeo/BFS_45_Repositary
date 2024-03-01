@@ -1,0 +1,126 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #4f6b39;
+    border-radius: 30px;
+
+    display: flex;
+    flex-wrap: wrap;      /* Allow flex items to wrap to the next line */
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+
+  }
+  
+  .box {
+    background-color: #dec9c9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 10px solid #e1c096;
+    border-radius: 20px;
+    transition-property: width, height, background-color; /* Apply transition to multiple properties */
+    transition-duration: 0.5s; /* Transition duration */
+    transition-timing-function: ease-in-out; /* Transition timing function */
+  }
+  
+  .box1 {
+    margin: 10px;
+    padding: 4px;
+    border: 10px solid #2a5535;
+    border-radius: 20px;
+    height: 250px;
+    width: calc(100%-60%);      /* Calculate width dynamically using the calc() function (100% of the container's width minus 40 pixels) */
+    letter-spacing: 5px;
+
+  }
+  
+  
+  .box2 {
+    margin: 20px;
+    padding: 30px;
+    width: 20%;         /* Set width relative to the parent container (50% of the container's width) */
+    animation-name: bounce; /* Name of the animation */
+    animation-duration: 0.5s; /* Duration of the animation */
+    animation-timing-function: ease-in-out; /* Timing function for animation */
+    animation-iteration-count: infinite; /* Repeat animation infinitely */
+  }
+  
+  .box3 {
+    margin: 0;
+    padding: 20px;
+    line-height: 10px;
+    height: 150px;
+    background-color: #bfc5e2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+  }
+  
+  
+  .box4 {
+    background-color: rgb(156, 207, 207);
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 15vh;           /* Set height relative to the viewport height (50% of the viewport height) */
+    font-variant: small-caps;
+  
+  }
+  input[type="text"] {
+    border: 2px solid #ceadad;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    
+
+  }
+  
+  .box:hover{
+   transform: scale(1.2);
+   background-color: #84b386; 
+ 
+  }
+ 
+  
+  @keyframes blink {
+    0% { opacity: 1; } /* Start with full opacity */
+    70% { opacity: 0; } /* Fade out halfway through */
+    100% { opacity: 1; } /* Return to full opacity */
+  }
+  
+  .linkcolor {
+    color: rgb(32, 50, 186); /* Set text color to skyblue */
+    font-size: xx-large; /* Set font size to extra large */
+    font-weight: 700; /* Set font weight to bold */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Set font family */
+  }
+  
+  .linkcolor:hover {
+    color: rgb(29, 239, 22); /* Change text color to navy on hover */
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); /* Start position */
+    }
+    20% {
+      transform: translateY(10); /* End position */
+    }
+  }
+  
+  /* Apply animation to box4 element when hovered */
+  .box4:hover {
+    animation-name: name; /* Name of the animation */
+    animation-duration: 1s; /* Duration of the animation */
+    animation-timing-function: ease-in-out; /* Timing function for animation */
+  }
+ 
+  .box3:hover{
+    box-shadow: 20px 20px #839276;
+    
+  }
+  
+ 
+  
+ 
