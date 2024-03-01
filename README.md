@@ -2,6 +2,8 @@
 
 ## Page Scroll Animation is used in the task.
 
+## Stagger Animation is also used in the task.
+
 ### Flexbox Layout
 
 - Utilized for `.section-header` and `.feature-container` for flexible and responsive layouts.
