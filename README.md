@@ -1,26 +1,17 @@
-# Task 3
+# Task 4
 
 <strong>Work by Satshree Shrestha</strong>
 
-## Simple CSS Showcase
+## React Router
 
-- text-align
-- box-shadow
-- border-radius
-- :hover pseudo selector
-- line-height (for line spacing)
-- margin and padding with `rem` and `%`
+Implemented react router with two pages (components)
 
-## Complex CSS Properties Used
-
-- keyframes
-- transform [scale]
-- transition [property/duration/timing-function]
-- browser specific property [-moz-/-ms-/-webkit-]
-- animation [name/duration/timing-function/iteration-count]
+- Home
+- Task 3
 
 ## Screenshot
 
-<img src="./src/assets/sc.png" alt="screenshot" style="width: 100%" />
+<img src="./src/assets/sc4_1.png" alt="screenshot1" style="width: 100%" />
+<img src="./src/assets/sc4.png" alt="screenshot1" style="width: 100%" />
   
 <hr />
