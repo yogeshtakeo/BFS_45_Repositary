@@ -1,10 +1,20 @@
-import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Widget from "./components/Widget/Widget";
+
+import "./App.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Widget />,
+  },
+]);
 
 function App() {
   return (
     <div className="page">
-      <Widget />
+      <RouterProvider router={router} />
     </div>
   );
 }
