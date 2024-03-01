@@ -1,6 +1,5 @@
-import Home from './components/home'
-import Navbar from './components/navbar'
-import Progress from './components/progress'
+
+import Header from './components/header'
 import './styles/App.css'
 
 function App() {
@@ -8,11 +7,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <div className="outerContainer"><hr /></div>
-      <Home />
-      <div className="outerContainer"><hr /></div>
-      <Progress />
+      <Header />
       
     </>
   )
