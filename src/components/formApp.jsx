@@ -1,8 +1,8 @@
 import React from 'react'
-import Form from './Form'
-import Header from './Header'
-import Label from './Label'
-import Button from './Button'
+import Form from './form'
+import Header from './header'
+import Label from './label'
+import Button from './button'
 
 function FormApp() {
   return (
