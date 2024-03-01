@@ -1,6 +1,5 @@
-import Content from './components/content'
-import Feature from './components/feature'
-import Header from './components/header'
+
+import Navbar from './components/navbar'
 import './styles/App.css'
 
 function App() {
@@ -8,9 +7,7 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Content />
-      <Feature />
+      <Navbar />
     </>
   )
 }
