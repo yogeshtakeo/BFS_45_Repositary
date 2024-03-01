@@ -1,8 +1,15 @@
-# React + Vite
+# Box Toggle App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Box Toggle App is a React web application that allows users to toggle the active state of a series of boxes. The active box is indicated by a blue color. Upon initial load, the first box is active. Pressing the toggle button shifts the active state to the next box in the sequence. When reaching the last box, clicking the toggle button activates the first box again.
 
-Currently, two official plugins are available:
+# Things I learned
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+    <li>Styling components with CSS</li>
+    <li>Managing component state using useState hook</li>
+    <li>Event handlers</li>
+</ul>
+
+# Screenshots
+
+<img src="./src/assets/Screenshot 2024-02-29 190743.png"/>
