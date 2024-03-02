@@ -1,0 +1,42 @@
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  height: 60vh;
+}
+
+.images img {
+  width: 400px;
+  height: 300px;
+  transition: 1s;
+}
+
+.images img:hover {
+  z-index: 1;
+  transform: scale(1.07);
+  box-shadow: 0 0 10px rgb(70, 68, 68);
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+.button {
+  color: black;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
