@@ -1,7 +1,5 @@
 #Task 4 : React Router with CSS Styling #6
 
-## My first basic website using javascript, css, and reactjs.
-
 ## Things I learned
 React Router DOM helps in building multi-page applications (MPAs) by providing a way to manage navigation and rendering different components based on the URL path.
 
@@ -20,3 +18,8 @@ React Router DOM supports dynamic routing, allowing you to define routes with dy
 
 #### History Management: 
 React Router DOM provides a history API that allows you to programmatically navigate between routes, go back and forward in history, and manipulate the browser's URL without causing a full page reload.
+
+## Screenshots
+
+<img src="./src/assets/Screenshot 2024-03-03 at 11.09.16 AM.png">
+<img src="./src/assets/Screenshot 2024-03-03 at 11.09.22 AM.png">
