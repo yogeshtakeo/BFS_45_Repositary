@@ -1,22 +1,27 @@
-import React, { useState } from "react";
-import "./App.css";
+import React from 'react';
+// import { userState } from React;
+import MainLayout from './layout/MainLayout';
 
 function App() {
-  const [count, setCount] = useState(0);
-  console.log(count);
   return (
-    <div className="container">
-      <button className="subtract" onClick={() => setCount(count - 1)}>
-        {" "}
-        Subtract 1{" "}
-      </button>
-      <p>{count}</p>
-      <button className="add" onClick={() => setCount(count + 1)}>
-        {" "}
-        Add 1{" "}
-      </button>
-    </div>
+
+    <MainLayout>
+      <div className="app">
+        <header>
+          <h1>Welcome Home</h1>
+        </header>
+        <main>
+          <p>This is a simple React application.</p>
+        </main>
+        <footer>
+          <p>Footer content goes here.</p>
+        </footer>
+      </div>
+
+    </MainLayout>
+
   );
 }
 
 export default App;
+
