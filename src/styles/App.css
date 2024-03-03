@@ -1,12 +1,40 @@
 .navbar{
     display: flex;
-    justify-content: center;
-}
-.navbar ul{
-    list-style-type: none;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 
-.navbar li{
-    float: left;
+.nav-link {
+    text-decoration: none;
+    color: inherit; 
+  }
+
+.navbar img{
+    width: 120px;
+    height: 90px;
     padding-left: 20px;
+}
+
+.navbar .items{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+}
+
+.navbar .items > div{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 20px 10px 20px;
+    height: 30px;
+}
+
+.navbar .items > div.active {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+
 }
