@@ -58,3 +58,10 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.socialIconDiv {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+}
