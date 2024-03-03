@@ -1,20 +1,16 @@
-import React, { useState } from "react";
-import "./App.css";
+import React from 'react';
+import Body from './components/Body';
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-  console.log(count);
   return (
-    <div className="container">
-      <button className="subtract" onClick={() => setCount(count - 1)}>
-        {" "}
-        Subtract 1{" "}
-      </button>
-      <p>{count}</p>
-      <button className="add" onClick={() => setCount(count + 1)}>
-        {" "}
-        Add 1{" "}
-      </button>
+    <div className="App">
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
