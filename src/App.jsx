@@ -1,9 +1,12 @@
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
 import Mountain from "./pages/8000ers";
-import "./styles/App.css";
-import Festival from "./pages/festival";
+import Site from "./pages/religiousSite";
 import { Route, Routes } from "react-router-dom";
+
+import "./styles/navbar.css";
+import "./styles/home.css";
+import "./styles/8000ers.css";
 
 function App() {
   return (
@@ -12,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/8000ers" element={<Mountain />} />
-        <Route path="/festival" element={<Festival />} />
+        <Route path="/religious-site" element={<Site />} />
       </Routes>
     </>
   );

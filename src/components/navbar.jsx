@@ -1,9 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import img1 from "../assets/Word Nepal.png";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function Navbar() {
+  // Get the current location
+  const location = useLocation();
   const [activeItem, setActiveItem] = useState(null);
+
+  useEffect(() => {
+    // Check if the current location and setActiveItem variable based on the current page
+    // if yes then setActiveItem variable as "Home"
+    if (location.pathname === "/") {
+      setActiveItem("Home");
+    } else if (location.pathname === "/8000ers") {
+      setActiveItem("8000ers");
+    } else if (location.pathname === "/religious-site") {
+      setActiveItem("Site");
+    }
+  }, [location]);
+  //In the above code, location in the dependency array,
+  //this ensures that the activeItem state is
+  // updated whenever the user navigates to a different page.
 
   const handleItemClick = (item) => {
     setActiveItem(item);
@@ -32,11 +50,11 @@ function Navbar() {
           </Link>
         </div>
         <div
-          className={activeItem === "Festival" ? "active" : ""}
-          onClick={() => handleItemClick("Festival")}
+          className={activeItem === "Site" ? "active" : ""}
+          onClick={() => handleItemClick("Site")}
         >
-          <Link to="/festival" className="nav-link">
-            Festival
+          <Link to="/religious-site" className="nav-link">
+            Religious Site
           </Link>
         </div>
       </div>
