@@ -1,21 +1,74 @@
-.container {
-  display: grid;
-  place-items: center;
+body{
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  
 }
 
-.container button {
-  padding: 1rem;
-  border: 0;
-  border-radius: 1rem;
-  min-width: 10rem;
+.wrapper > *{
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+}
+.header{
+  background-color: yellow;
+  height: 120px;
+  animation: pulseAnimation 2s infinite ease-in-out;
+}
+.footer{
+  background-color: skyblue;
+  height: 80px;
+}
+.main{
+  background-color: rgb(178, 80, 97);
+  height: 300px;
+  animation: pulseAnimation 2s infinite ease-in-out;
+  
+}
+.side1{
+  background-color: aqua;
+}
+.side2{
+  background-color: rgb(119, 179, 119);
 }
 
-.container .subtract {
-  background-color: red;
-  color: white;
+@media all and (min-width: 800px){
+  .main{
+    flex: 3;
+  }
+  .side1{
+    order: 1;
+  }
+  .side2{
+    order: 2;
+  }
+  .main{
+    order: 3;
+  }
+  .footer{
+    order: 4;
+  }
+
 }
 
-.container .add {
-  background-color: greenyellow;
-  color: black;
+@media all and (min-width: 600px){
+  .side{
+    flex: 1;
+  }
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
