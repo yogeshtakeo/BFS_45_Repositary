@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-// import TodoApp from './TodoApp';
 
 function App() {
     const [tasks, setTasks] = useState([]);
@@ -24,7 +23,7 @@ function App() {
 
     return (
         <div className='todo-container'>
-        <h1>Todo List</h1>
+            <h1>Todo List</h1>
             <form onSubmit={handleAddTask}>
                 <input
                     type="text"
@@ -43,10 +42,14 @@ function App() {
                             onChange={(e) => handleEditTask(task.id, e.target.value)}
                         />
                         <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+                        {/* Add the Edit button */}
+                        <button onClick={() => handleEditTask(task.id, prompt('Enter new task title'))}>
+                            Edit
+                        </button>
                     </li>
                 ))}
             </ul>
-    </div>
+        </div>
     );
 }
 
