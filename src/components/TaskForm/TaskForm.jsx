@@ -46,6 +46,25 @@ function TaskForm(props) {
     navigate("/");
   };
 
+  const deleteTask = () => {
+    if (window.confirm("Delete this task?")) {
+      // GET ALL TASKS
+      let taskList = props.todoLists;
+
+      // GET TASK INDEX
+      let taskIndex = taskList.indexOf(getTask(taskList, task.id));
+
+      // REMOVE TASK
+      taskList.splice(taskIndex, 1);
+
+      // UPDATE TASK LIST
+      props.updateList(taskList);
+
+      // NAVIGATE TO HOME
+      navigate("/");
+    }
+  };
+
   return (
     <div>
       <div className={style.title}>
@@ -87,6 +106,7 @@ function TaskForm(props) {
             type="button"
             className="btn danger-btn"
             style={{ marginLeft: "1rem" }}
+            onClick={deleteTask}
           >
             Delete
           </button>
