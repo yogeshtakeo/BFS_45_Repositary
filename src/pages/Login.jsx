@@ -19,6 +19,7 @@ import gmail from "../assets/gmail.png";
 import linkedin from "../assets/linkedin.png";
 import facebook from "../assets/facebook.png";
 import tiktok from "../assets/tiktok.png";
+import { Link } from "react-router-dom";
 
 const twitterImg = twitter;
 const youtubeImg = youtube;
@@ -52,6 +53,9 @@ function Login() {
           </div>
           <div className={style.buttonDiv}>
             <Button name="Login" />
+            <Link to="/signup">
+              <Button name="Sign Up" />
+            </Link>
           </div>
           <div className={style.socialIconDiv}>
             <a href="https://twitter.com/takeo_ai" target="_blank">
