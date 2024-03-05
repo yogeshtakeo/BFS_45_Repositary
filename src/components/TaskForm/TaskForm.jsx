@@ -82,9 +82,9 @@ function TaskForm(props) {
 
   return (
     <div>
-      <div className={`center ${style.title}`}>
+      {/* <div className={`center ${style.title}`}>
         {addMode ? "Add New Task" : `Edit ${title}`}
-      </div>
+      </div> */}
       <form className={style.form} onSubmit={submitForm}>
         <label>Task ID</label>
         <p className={style.id}>{task.id}</p>

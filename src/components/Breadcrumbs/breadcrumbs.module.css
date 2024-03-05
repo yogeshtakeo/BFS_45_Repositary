@@ -1,0 +1,27 @@
+.breadcrumbs {
+  width: 550px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb {
+  text-decoration: none;
+}
+
+.divider {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.breadcrumb,
+.divider {
+  display: inline-block;
+}
+
+.breadcrumb,
+.divider,
+.breadcrumb:visited {
+  color: #5c5c5c;
+}
