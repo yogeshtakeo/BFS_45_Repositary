@@ -1,7 +1,4 @@
-/* TodoList.css */
-
-/* Main container */
-.todoapp {
+.todo-container {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -80,3 +77,20 @@ li.completed {
   text-decoration: line-through;
   color: #888;
 }
+AI-generated code. Review and use carefully. More info on FAQ.
+Link the CSS file in your index.html:
+HTML
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="TodoList.css"> <!-- Add this line -->
+  <title>Todo List</title>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

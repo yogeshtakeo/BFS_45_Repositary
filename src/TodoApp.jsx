@@ -1,29 +1,10 @@
-import React, { useState } from 'react';
-import './App.css';
-// import TodoApp from './TodoApp';
+import React from 'react'
 
-function App() {
-    const [tasks, setTasks] = useState([]);
-    const [newTask, setNewTask] = useState('');
+import './App.css'
 
-    const handleAddTask = (e) => {
-        e.preventDefault();
-        if (newTask.trim() !== '') {
-            setTasks([...tasks, { id: Date.now(), title: newTask, completed: false }]);
-            setNewTask('');
-        }
-    };
-
-    const handleDeleteTask = (id) => {
-        setTasks(tasks.filter(task => task.id !== id));
-    };
-
-    const handleEditTask = (id, newTitle) => {
-        setTasks(tasks.map(task => task.id === id ? { ...task, title: newTitle } : task));
-    };
-
-    return (
-        <div className='todo-container'>
+function TodoApp() {
+  return (
+    <div className='todo-container'>
         <h1>Todo List</h1>
             <form onSubmit={handleAddTask}>
                 <input
@@ -47,7 +28,7 @@ function App() {
                 ))}
             </ul>
     </div>
-    );
+  )
 }
 
-export default App;
+export default TodoApp
