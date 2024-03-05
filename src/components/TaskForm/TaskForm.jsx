@@ -12,7 +12,7 @@ function TaskForm(props) {
   const location = useLocation();
   const navigate = useNavigate();
 
-  console.log(location.state);
+  // TASK
   const task = location.state || {
     id: parseInt(Math.random() * 1000), // GENERATE RANDOM NUMBER FOR NEW TASK,
     title: "",
@@ -21,28 +21,43 @@ function TaskForm(props) {
   };
   const addMode = task.add;
 
+  // STATES
   const [title, setTitle] = useState(task.title);
   const [completed, setCompleted] = useState(task.completed);
 
   const submitForm = (e) => {
+    // PREVENT SUBMIT EVENT
     e.preventDefault();
 
+    // TASK DATA
     let newTaskData = {
       id: task.id,
       title,
       completed,
     };
 
+    // GET ALL TASKS
     let taskList = props.todoLists;
 
     if (addMode) {
+      // FOR ADD MODE
+
+      // ADD NEW TASK TO TASK LIST
       taskList.push(newTaskData);
     } else {
+      // FOR EDIT MODE
+
+      // GET TASK INDEX
       let taskIndex = taskList.indexOf(getTask(taskList, task.id));
+
+      // REPLACE WITH NEW TASK
       taskList[taskIndex] = newTaskData;
     }
 
+    // UPDATE TASK LIST
     props.updateList(taskList);
+
+    // NAVIGATE TO HOME
     navigate("/");
   };
 
