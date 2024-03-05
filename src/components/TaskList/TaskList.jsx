@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import style from "./list.module.css";
 
@@ -23,7 +24,18 @@ function TaskList(props) {
       <hr />
       <br />
       <div className="center">
-        <button className="btn">Add Task</button>
+        <Link
+          to="/form"
+          state={{
+            id: parseInt(Math.random() * 1000), // GENERATE RANDOM NUMBER FOR NEW TASK,
+            title: "",
+            completed: false,
+            add: true,
+          }}
+          className={"btn " + style["action-btn"]}
+        >
+          Add Task
+        </Link>
       </div>
       <br />
       <div>
@@ -33,9 +45,16 @@ function TaskList(props) {
           </>
         ) : (
           taskList.map((task, index) => (
-            <div key={index} className={style.list}>
-              hello
-            </div>
+            <Link
+              key={index}
+              to="/form"
+              state={task}
+              className={
+                task.completed ? `${style.list} ${style.completed}` : style.list
+              }
+            >
+              {task.title}
+            </Link>
           ))
         )}
       </div>

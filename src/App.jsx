@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import TaskList from "./components/TaskList/TaskList";
+import TaskForm from "./components/TaskForm/TaskForm";
 
 function App() {
   const [todoLists, updateList] = useState([]);
@@ -19,6 +20,13 @@ function App() {
                 exact={true}
                 element={
                   <TaskList todoLists={todoLists} updateList={updateList} />
+                }
+              />
+              <Route
+                path="/form"
+                exact={true}
+                element={
+                  <TaskForm todoLists={todoLists} updateList={updateList} />
                 }
               />
             </Routes>

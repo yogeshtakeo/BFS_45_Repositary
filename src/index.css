@@ -28,6 +28,14 @@ hr {
   padding: 0.5rem 1.25rem;
 }
 
+.btn.danger-btn {
+  background-color: #b40909;
+}
+
+.btn.danger-btn:hover {
+  background-color: #b53b3b;
+}
+
 .btn:hover {
   cursor: pointer;
   background-color: #2b68b2;
@@ -44,4 +52,13 @@ hr {
   padding: 0.75rem 1.25rem;
 
   width: 100%;
+}
+
+.checkbox-input {
+  margin-left: 0.5rem;
+}
+
+.checkbox:hover,
+.checkbox-input:hover {
+  cursor: pointer;
 }
