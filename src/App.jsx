@@ -4,7 +4,7 @@ import MyButton from './Button.jsx';
 import bitcoinimg from './bitcoin_img.jpg';
 
 function PG_Title(){
-  useEffect(() => {document.title = 'Bitcoin is the future'},[])
+  useEffect(() => {document.title = 'CSS Mastering'},[])
 };
 
 
@@ -12,11 +12,10 @@ export default function MyApp() {
   PG_Title()
   return (
     <div>
-      <h1 className='body'>Welcome</h1>
-      <div className='box'>
-        <img src={bitcoinimg} height={400} width={400}></img>
-      </div>
-      <MyButton />
+      <div className='box1'>
+      <div className='box2'>
+        <div className='box3'><MyButton /></div>
+      </div></div>
     </div>
   );
 }

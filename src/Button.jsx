@@ -1,10 +1,9 @@
 
 export default function MyButton() {
     return ( 
-      <p className='body1'>
-      <a href = "https://bitcoin.org/en/">     
-          <button className='button'>Click here</button>
-      </a> to learn about bitcoin.</p>
+    <a href = "https://www.w3schools.com/css/" target="_blank">
+      <button className='button'>Learn</button>
+    </a>
     );
   }
 
