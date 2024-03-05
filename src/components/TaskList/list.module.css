@@ -1,0 +1,19 @@
+.list {
+  border: 0.8px solid #c9c9c9;
+  border-radius: 8px;
+
+  /* transition: background-color 0.3s linear;
+  -ms-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear; */
+}
+
+.list:hover {
+  cursor: pointer;
+  background-color: #c9c9c9;
+
+  /* transition: background-color 0.3s linear;
+  -ms-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear; */
+}
