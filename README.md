@@ -1,15 +1,13 @@
-# Counter Application
+# Todo  application
 
-This is the counter application that is built on React using the Vite project.
+This is the todo list application that is built using React.
 
 ## Learning Things
 
 <ul>
 <li>React </li>
-<li>State Mangement </li>
-<li>CSS handling  </li>
+<li>State Mangement: useState </li>
 </ul>
 
 ## Screenshots
-
-<img alt="Screentshot_1" src="./src/assets/screenshot_1.png">
+<img src='src/assets/Screenshot 2024-03-05 at 11.58.54 PM.png'>
