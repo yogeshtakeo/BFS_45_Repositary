@@ -1,0 +1,60 @@
+
+.todo-nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.navbar-header{
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  color: black;
+  letter-spacing: 2px;
+  margin: 20px 0 0 0;
+}
+
+.line {
+  margin: 0% 35%;
+}
+
+hr{
+  height: 4px;
+  background-color: #1B3C73;
+  opacity: 0.5;
+}
+
+.todo-header{
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 0 5px;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+.innerForm{
+  margin: 10px;
+}
+
+.innerForm.title{
+  width: 40%;
+}
+
+.btn.btn-success.b1{
+  margin-top: 10px;
+  height: 20%;
+}
+.table{
+  border: 7px solid;
+}
+
+
