@@ -1,26 +1,24 @@
 .nav-bar {
     list-style-type:circle;
-    margin: 0;
-    padding: 0;
+    margin: 50px;
+    padding: 40px;
     overflow: hidden;
-    background-color: rgb(44, 76, 189);
+    background-color: rgb(210, 217, 241);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
   }
   
   
-  .li a {
+  .li {
     display: block;
-    color: rgb(241, 110, 110);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
+    margin: 10px;
     text-decoration:dotted;
     float: left;
   }
   
-  .li a:hover:not(.active) {
+  .li :hover:not(.active) {
     background-color: #faf36c;
   }
-  
-  .active {
-    background-color: #08def6;}
+ 
