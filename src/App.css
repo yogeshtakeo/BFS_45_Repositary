@@ -1,21 +1,62 @@
-.container {
-  display: grid;
-  place-items: center;
+.body {
+  background-color: #f0f2f5;
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
 
-.container button {
-  padding: 1rem;
-  border: 0;
-  border-radius: 1rem;
-  min-width: 10rem;
+.title {
+  color: #333;
+  text-align: center;
 }
 
-.container .subtract {
-  background-color: red;
+.inputField {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.container .add {
-  background-color: greenyellow;
-  color: black;
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoItem {
+  background-color: #ffffff;
+  margin-top: 2px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteButton {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
 }
