@@ -1,42 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background-color: rgb(0, 1, 15);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: fit-content;
+  height: 80vh;
+  background-color: rgb(37, 36, 51);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(153, 153, 208);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App form {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="text"] {
+  width: 400px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input[type="checkbox"] {
+  width: 20px;
 }
 
-.card {
-  padding: 2em;
+.add-btn {
+  background-color: rgb(78, 76, 76);
+  color: white;
+  padding: 8px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid rgb(5, 5, 5);
 }
 
-.read-the-docs {
-  color: #888;
+.add-btn:hover {
+  background-color: white;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo {
+  margin: 1rem 3rem;
+  background-color: aliceblue;
+  display: flex;
+  width: 400px;
+  padding: 8px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.todo-text {
+  flex: 1; /* takes up all the remaining space */
+}
+
+.todo.complete {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+.icon {
+  margin-right: 10px;
+  cursor: pointer;
 }
