@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./App.css";
 import Counter from "./pages/Calculator";
 import ConversionApplication from "./pages/Conversion";
